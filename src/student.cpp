@@ -110,7 +110,7 @@ bool dequeue(Queue& q, int& nomor) {
 void clear(Queue& q) {
     Node* current = q.depan;
 
-    while (!isEmpty(q)) {
+    while (current != nullptr) {
         Node* nextNode = current->next;
         delete current;
         current = nextNode;
